@@ -1,3 +1,5 @@
+
+
 # Distributed Machine Learning System
 
 ![torch](<assets/banner.jpg>)
@@ -57,7 +59,7 @@ The steps involved are:
 
 I'm using a Macbook. These system are generally built on cloud. I'm using conda as the package manager. I also use homebrew for installations.
 
-[1] Let's install pytorch for data processing, model building and evaluation workflows.
+[1] Let's install tensorflow for data processing, model building and evaluation workflows.
 
 ```bash
 conda install tensorflow tensorflow_datasets
@@ -143,7 +145,7 @@ helm install dist-mlflow community-charts/mlflow
 
 There are multiple design patterns which can be used to create a ML system. In this project, I'm sticking to the easiest one. It has a data ingestion component. Once data is available you can schedule the pipeline to download the data and store it somewhere(e.g. s3). We then train multiple models on the same dataset parallely. Once the models are available, we can pick the best model and create a scalable inference service.
 
-<img width="1075" alt="Screenshot 2024-06-17 at 3 28 42 PM" src="https://github.com/aniket-mish/distributed-ml-system/assets/71699313/635143bb-0952-4578-99cd-6d40d1172a33">
+<img width="1075" alt="Screenshot 2024-06-17 at 3 28 42 PM" src="https://github.com/aniket-mish/distributed-ml-system/assets/71699313/635143bb-0952-4578-99cd-6d40d1172a33">
 
 ## Data Ingestion
 
